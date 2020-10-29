@@ -12,322 +12,445 @@
 </head>
 
 <body>
-    <div id="wrapper">
-        <header>
-            <div id="logo"><H1><a id="logo" href="home.html">MAGAZINCHIK</a></H1></div>
-            <nav>
-                <ul>
-                    <li><a href="#">MEN</a></li>
-                    <li><a href="#">WOMEN</a></li>
-                    <li><a href="#shop">SHOP</a></li>
-                    <li><a href="#about_us">ABOUT US</a></li>
-                </ul>
-            </nav>
-            <div class="cartButton">
-                <div class="cartTitle">CART</div>
-                <div class="cartCount">0</div>
-            </div>
-            <div class="buttonBlock">
-                <button type="button">REGISTER</button>
-                <button type="button">LOGIN</button>
-            </div>
-        </header>
-        <main>
+    <header>
+        <div id="logo"><H1><a id="logo" href="home.html">MAGAZINCHIK</a></H1></div>
+        <nav>
+            <ul>
+                <li><a href="#">MEN</a></li>
+                <li><a href="#">WOMEN</a></li>
+                <li><a href="#about_us">ABOUT US</a></li>
+                <li><a href="#shop">SHOP</a></li>
+                <li><a href="#help">HELP</a></li>
+            </ul>
+        </nav>
+        <div class="cartButton">
+            <div class="cartTitle">CART</div>
+            <div class="cartCount">0</div>
+        </div>
+        <div class="buttonBlock">
+            <button type="button">REGISTER</button>
+            <button type="button">LOGIN</button>
+        </div>
+    </header>
+    <main>
 
-            <div class="slider_wrapper">
-                <div class="slider">
-                    <section class="slider_element"><img  src="./images/slides/slide1.jpg" alt="slide1"></section>
-                    <section class="slider_element one"><img src="./images/slides/slide2.jpg" alt="slide2"></section>
-                    <section class="slider_element two"><img src="./images/slides/slide3.jpg" alt="slide3"></section>
+        <div class="slider_wrapper">
+            <div class="slider">
+                <section class="slider_element"><img  src="./images/slides/slide1.jpg" alt="slide1"></section>
+                <section class="slider_element one"><img src="./images/slides/slide2.jpg" alt="slide2"></section>
+                <section class="slider_element two"><img src="./images/slides/slide3.jpg" alt="slide3"></section>
+            </div>
+            <div class="controls unselectable">
+                <span class="arrow left">
+                    <i class="material-icons">keyboard_arrow_left</i>
+                </span>
+                <span class="arrow right">
+                    <i class="material-icons">keyboard_arrow_right</i>
+                </span>
+            </div>
+        </div>
+
+        <h2 id="about_us">ABOUT US</h2>
+        <div class="aboutUsBlockWrapper">
+            <div class="aboutUsBlock">
+                <img src="./images/quality.svg" alt="shipping">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Mauris rutrum placerat justo, eu aliquet quam ultrices vel. 
+                    Morbi nec mollis lorem, ac pretium erat. 
+                    Pellentesque dictum facilisis erat, non imperdiet tortor bibendum quis.
+                </p>
+            </div>
+            <div class="aboutUsBlock">
+                <img src="./images/groups.svg" alt="shipping">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Mauris rutrum placerat justo, eu aliquet quam ultrices vel. 
+                    Morbi nec mollis lorem, ac pretium erat. 
+                    Pellentesque dictum facilisis erat, non imperdiet tortor bibendum quis.
+                </p>
+            </div>
+            <div class="aboutUsBlock">
+                <img src="./images/shipping.svg" alt="shipping">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Mauris rutrum placerat justo, eu aliquet quam ultrices vel. 
+                    Morbi nec mollis lorem, ac pretium erat. 
+                    Pellentesque dictum facilisis erat, non imperdiet tortor bibendum quis.
+                </p>
+            </div>
+        </div>
+        <h2 id="shop" >NEW</h2>
+        <div class="productsContainer">
+
+            <div class="product">
+                    <div class="productPreview">
+                        <a href="#">
+                            <img class="productPreview1" src="./images/blue_jacket_1.jpg" alt="jacket">
+                            <img class="productPreview2" src="./images/blue_jacket_2.jpg" alt="jacket">
+                        </a>
+                    </div>
+                <div class="productDescription">
+                    <a href="#" class="productTitle">LILLY STRIPE LINED RAINCOAT IN CORNFLOWER BLUE</a>
+                    <p class="productPrice">&euro;69.99</p>
+                    <p class="oldPrice">&euro;420.69</p>
                 </div>
-                <div class="controls" onselectstart="return false" onmousedown="return false">
-                    <span class="arrow left">
-                        <i class="material-icons">keyboard_arrow_left</i>
-                    </span>
-                    <span class="arrow right">
-                        <i class="material-icons">keyboard_arrow_right</i>
-                    </span>
+            </div>
+            
+            <div class="product">
+                <div class="productPreview">
+                    <a href="#">
+                        <img class="productPreview1" src="./images/med-grey-melange-maharvey-n-coat_1.jpg" alt="jacket">
+                        <img class="productPreview2" src="./images/med-grey-melange-maharvey-n-coat_2.jpg" alt="jacket">
+                    </a>
+                </div>
+                <div class="productDescription">
+                    <a href="#" class="productTitle">product</a>
+                    <p class="productPrice">&euro;69.99</p>
+                </div>
+            </div>
+            
+            <div class="product">
+                <div class="productPreview">
+                    <a href="#">
+                        <img class="productPreview1" src="./images/azura-blue-matrostol-b1-shirt_1.jpg" alt="jacket">
+                        <img class="productPreview2" src="./images/azura-blue-matrostol-b1-shirt_2.jpg" alt="jacket">
+                    </a>
+                </div>
+                <div class="productDescription">
+                    <a href="#" class="productTitle">product</a>
+                    <p class="productPrice">&euro;69.99</p>
                 </div>
             </div>
 
-            <h2 id="about_us">ABOUT US</h2>
-            <div class="aboutUsBlockWrapper">
-                <div class="aboutUsBlock">
-                    <img src="./images/quality.svg" alt="shipping">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Mauris rutrum placerat justo, eu aliquet quam ultrices vel. 
-                        Morbi nec mollis lorem, ac pretium erat. 
-                        Pellentesque dictum facilisis erat, non imperdiet tortor bibendum quis.
-                    </p>
+            <div class="product">
+                <div class="productPreview">
+                    <a href="#">
+                        <img class="productPreview1" src="./images/gramatal_long_sleeve_t-shirt_in_white_and_navy-1.jpg" alt="jacket">
+                        <img class="productPreview2" src="./images/gramatal_long_sleeve_t-shirt_in_white_and_navy-2.jpg" alt="jacket">
+                    </a>
                 </div>
-                <div class="aboutUsBlock">
-                    <img src="./images/groups.svg" alt="shipping">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Mauris rutrum placerat justo, eu aliquet quam ultrices vel. 
-                        Morbi nec mollis lorem, ac pretium erat. 
-                        Pellentesque dictum facilisis erat, non imperdiet tortor bibendum quis.
-                    </p>
-                </div>
-                <div class="aboutUsBlock">
-                    <img src="./images/shipping.svg" alt="shipping">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Mauris rutrum placerat justo, eu aliquet quam ultrices vel. 
-                        Morbi nec mollis lorem, ac pretium erat. 
-                        Pellentesque dictum facilisis erat, non imperdiet tortor bibendum quis.
-                    </p>
+                <div class="productDescription">
+                    <a href="#" class="productTitle">product</a>
+                    <p class="productPrice">&euro;69.99</p>
                 </div>
             </div>
-            <h2 id="shop" >NEW</h2>
-            <div class="productsContainer">
+            
+            <div class="product">
+                <div class="productPreview">
+                    <a href="#">
+                        <img class="productPreview1" src="./images/miami_jeans_in_dark_denim_1.jpg" alt="jacket">
+                        <img class="productPreview2" src="./images/miami_jeans_in_dark_denim_2.jpg" alt="jacket">
+                    </a>
+                </div>
+                <div class="productDescription">
+                    <a href="#" class="productTitle">product</a>
+                    <p class="productPrice">&euro;69.99</p>
+                </div>
+            </div>
 
-                <div class="product">
-                        <div class="productPreview">
-                            <a href="#">
-                                <img class="productPreview1" src="./images/blue_jacket_1.jpg" alt="jacket">
-                                <img class="productPreview2" src="./images/blue_jacket_2.jpg" alt="jacket">
-                            </a>
+            <div class="product">
+                <div class="productPreview">
+                    <a href="#">
+                        <img class="productPreview1" src="./images/dark_green_jacket_1.jpg" alt="jacket">
+                        <img class="productPreview2" src="./images/dark_green_jacket_2.jpg" alt="jacket">
+                    </a>
+                </div>
+                <div class="productDescription">
+                    <a href="#" class="productTitle">product</a>
+                    <p class="productPrice">&euro;69.99</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="productPreview">
+                    <a href="#">
+                        <img class="productPreview1" src="./images/sofia_1_4_zip_cotton_stripe_knit_in_red-1.jpg" alt="jacket">
+                        <img class="productPreview2" src="./images/sofia_1_4_zip_cotton_stripe_knit_in_red-2.jpg" alt="jacket">
+                    </a>
+                </div>
+                <div class="productDescription">
+                    <a href="#" class="productTitle">product</a>
+                    <p class="productPrice">&euro;69.99</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="productPreview">
+                    <a href="#">
+                        <img class="productPreview1" src="./images/glock_mens_tee_in_burgundy-1.jpg" alt="jacket">
+                        <img class="productPreview2" src="./images/glock_mens_tee_in_burgundy-2.jpg" alt="jacket">
+                    </a>
+                </div>
+                <div class="productDescription">
+                    <a href="#" class="productTitle">product</a>
+                    <p class="productPrice">&euro;69.99</p>
+                </div>
+            </div>
+
+        </div>
+        <h2 id="help">HELP</h2>
+        <div class="helpBlock">
+            <ul>
+                <li>
+                    <h3 class="collapse_button unselectable">Hoodie size chart</h3>
+                    <div class="collapse_content">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Russian size</td>
+                                    <td>International size</td>
+                                    <td>Bust (cm)</td>
+                                    <td>Waist (cm)</td>
+                                    <td>Hip girth (cm)</td>
+                                    <td>Sleeve length (cm)</td>
+                                    <td>USA (US)</td>
+                                    <td>Europe (EU)</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>44</td>
+                                    <td>XXS</td>
+                                    <td>88</td>
+                                    <td>70</td>
+                                    <td>92</td>
+                                    <td>59</td>
+                                    <td>34</td>
+                                    <td>38</td>
+                                </tr>
+                                <tr>
+                                    <td>46</td>
+                                    <td>XS</td>
+                                    <td>92</td>
+                                    <td>76</td>
+                                    <td>96</td>
+                                    <td>60</td>
+                                    <td>36</td>
+                                    <td>40</td>
+                                </tr>
+                                <tr>
+                                    <td>48</td>
+                                    <td>S</td>
+                                    <td>96</td>
+                                    <td>82</td>
+                                    <td>100</td>
+                                    <td>61</td>
+                                    <td>38</td>
+                                    <td>42</td>
+                                </tr>
+                                <tr>
+                                    <td>50</td>
+                                    <td>M</td>
+                                    <td>100</td>
+                                    <td>88</td>
+                                    <td>104</td>
+                                    <td>62</td>
+                                    <td>40</td>
+                                    <td>44</td>
+                                </tr>
+                                <tr>
+                                    <td>52</td>
+                                    <td>L</td>
+                                    <td>104</td>
+                                    <td>94</td>
+                                    <td>108</td>
+                                    <td>63</td>
+                                    <td>42</td>
+                                    <td>46</td>
+                                </tr>
+                                <tr>
+                                    <td>54</td>
+                                    <td>XL</td>
+                                    <td>108</td>
+                                    <td>100</td>
+                                    <td>112</td>
+                                    <td>63</td>
+                                    <td>44</td>
+                                    <td>48</td>
+                                </tr>
+                                <tr>
+                                    <td>56</td>
+                                    <td>XXL</td>
+                                    <td>112</td>
+                                    <td>106</td>
+                                    <td>116</td>
+                                    <td>64</td>
+                                    <td>46</td>
+                                    <td>50</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </li>
+                <li>
+                    <h3 class="collapse_button unselectable">Pants size chart</h3>
+                    <div class="collapse_content">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Размер</td>
+                                    <td>S</td>
+                                    <td>M</td>
+                                    <td>L</td>
+                                    <td>XL</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Длина, см</td>
+                                    <td>92</td>
+                                    <td>94</td>
+                                    <td>96</td>
+                                    <td>98</td>
+                                </tr>
+                                <tr>
+                                    <td>Ширина талии, см</td>
+                                    <td>42</td>
+                                    <td>44</td>
+                                    <td>46</td>
+                                    <td>48</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </li>
+                <li>
+                    <h3 class="collapse_button unselectable">T-shirt size chart</h3>
+                    <div class="collapse_content">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Международный размер</td>
+                                    <td>Обхват груди (см)</td>
+                                    <td>Обхват талии (см)</td>
+                                    <td>Высота (см)</td>
+                                    <td>Российский размер</td>
+                                    <td>США (US)</td>
+                                    <td>Европа (EU)</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>XS</td>
+                                    <td>90-94</td>
+                                    <td>76</td>
+                                    <td>54-60</td>
+                                    <td>46</td>
+                                    <td>36</td>
+                                    <td>40</td>
+                                </tr>
+                                <tr>
+                                    <td>S</td>
+                                    <td>94-98</td>
+                                    <td>82</td>
+                                    <td>58-64</td>
+                                    <td>48</td>
+                                    <td>38</td>
+                                    <td>42</td>
+                                </tr>
+                                <tr>
+                                    <td>M</td>
+                                    <td>98-102</td>
+                                    <td>88</td>
+                                    <td>62-68</td>
+                                    <td>50</td>
+                                    <td>40</td>
+                                    <td>44</td>
+                                </tr>
+                                <tr>
+                                    <td>L</td>
+                                    <td>102-106</td>
+                                    <td>94</td>
+                                    <td>66-72</td>
+                                    <td>52</td>
+                                    <td>42</td>
+                                    <td>46</td>
+                                </tr>
+                                <tr>
+                                    <td>XL</td>
+                                    <td>106-110</td>
+                                    <td>100</td>
+                                    <td>70-76</td>
+                                    <td>54</td>
+                                    <td>44</td>
+                                    <td>48</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </li>
+                <li>
+                    <h3 class="collapse_button unselectable">Contacts</h3>
+                    <div class="collapse_content">
+                        <p>Phone number: <a href="tel:123-456-7890">123-456-7890</a></p>
+                        <p>E-mail: <a href = "mailto: abc@example.com">abc@example.com</a></p>
+                    </div>
+                </li>
+                <li>
+                    <h3 class="collapse_button unselectable" id="privacyPolicy">Privacy policy</h3>
+                    <div class="collapse_content" >
+                        <div class="scroll_content" style="width: 800px; overflow-y: scroll; max-height: 400px;">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla perferendis facilis delectus non officia qui iste reprehenderit. Dignissimos aperiam velit laboriosam commodi fugiat reiciendis sapiente maxime corporis ipsum. Quam assumenda magni, officiis neque iste ex molestiae sed nesciunt ipsa. Cupiditate dignissimos labore accusantium deserunt tenetur voluptate in possimus debitis, fugit non odio, sint minus officiis rem quasi impedit reiciendis quidem magni architecto distinctio accusamus similique. Eveniet explicabo in cum officia, nostrum ipsa at provident, eos doloremque dolorem saepe tenetur! Nam, in numquam, autem ipsum hic veritatis doloribus error culpa repellat perspiciatis deleniti quibusdam facilis similique, voluptate dignissimos quod optio beatae. Laborum voluptatibus esse cumque ex incidunt aut saepe labore impedit quod doloribus placeat dicta, deserunt molestias in veniam repellendus fugiat quae vitae facere officia? Illum ut sequi earum iste. Dolorem sunt provident veniam dolore aliquid vero quisquam, suscipit placeat minus iste earum porro hic assumenda modi voluptatibus sequi, amet quam in voluptatum blanditiis recusandae accusamus. Quaerat suscipit ipsam odit pariatur facilis deleniti laborum quasi molestiae, quo quam vel, quibusdam earum possimus inventore, rerum autem sapiente ad. Illo magnam id officiis, possimus pariatur et optio animi facere vel iure sint voluptas obcaecati enim quibusdam in consequuntur tempora recusandae rerum? Qui ducimus voluptatem corrupti cupiditate sit, ad soluta ex quae quo nihil exercitationem. Inventore corporis consectetur animi magni accusamus. Repudiandae reprehenderit similique praesentium dolore minus in, possimus corrupti sint doloribus sunt voluptas ducimus molestias porro, harum quas optio aliquam nulla repellendus quasi sit enim adipisci totam temporibus quos? Suscipit quaerat, obcaecati laborum in dolore voluptatem inventore deleniti nemo nobis odit molestiae ut assumenda, blanditiis doloribus quis facere. Aspernatur, ea odit labore voluptatem optio blanditiis voluptatibus fuga, reprehenderit suscipit accusantium placeat vel. Voluptatibus, rerum nesciunt expedita facere, aut numquam ea accusantium minus natus, doloribus eius debitis repellendus aperiam quos cupiditate nulla impedit tempore dolore cum necessitatibus nobis quibusdam quam explicabo dolorem? Hic officiis, vero sint similique blanditiis omnis numquam eveniet neque ea quis illum ducimus deserunt ex maxime. Iste cumque nemo reiciendis minus maxime quaerat delectus enim, tempora odit, assumenda eligendi corporis reprehenderit aspernatur molestiae voluptas adipisci consectetur at dolorem libero laborum dolorum recusandae. Doloribus, eligendi. Eos vel animi odio, dicta explicabo perferendis magni sit iure commodi et qui ut provident illum consequuntur mollitia facere veniam earum, harum exercitationem inventore quisquam impedit porro. Pariatur dignissimos consectetur iusto obcaecati molestias, laboriosam autem error necessitatibus sit temporibus optio illum laudantium aspernatur soluta voluptas nam dolor tenetur laborum, corporis ut assumenda repellendus aut! Quis ullam ut officiis nulla esse eius ipsum expedita reprehenderit vitae sunt corrupti facilis, deserunt necessitatibus quisquam accusamus laudantium! Nemo velit ex culpa, cupiditate similique magni! Ratione ea deserunt ducimus enim rem temporibus commodi quisquam libero quia qui. Adipisci quis perferendis quaerat, blanditiis molestias aspernatur, eum delectus aut in sed sequi dolores quasi aperiam earum possimus molestiae odio consequuntur mollitia dicta quod provident. Porro at, dignissimos doloribus blanditiis, dolor assumenda modi tempora delectus amet corrupti soluta excepturi alias sunt rerum hic iusto placeat? Id laboriosam aspernatur sunt illo vel sapiente non maxime esse eligendi, excepturi recusandae nulla, earum quia rerum perspiciatis nihil, tenetur sit corporis omnis delectus! Ipsum modi quam saepe magni corrupti, laudantium temporibus, exercitationem excepturi deserunt autem architecto aut ipsa illo quis a, possimus maiores nobis dignissimos magnam ut qui dolorum adipisci. Numquam odio quam ab officia deserunt cupiditate alias tenetur sunt officiis, iure earum eveniet vitae quas ad ut? Provident pariatur consectetur ut culpa quas, debitis, delectus perspiciatis amet consequatur tenetur repudiandae natus dolor ea explicabo voluptatem odit reiciendis mollitia vel? Aliquam ea quis, veniam deleniti, consectetur cum amet omnis laboriosam dolorem reprehenderit dolores nulla ab, saepe repudiandae temporibus commodi pariatur at. Quasi debitis non odio pariatur quae doloribus, sed molestiae omnis harum similique sapiente repudiandae aliquid temporibus incidunt totam atque quibusdam expedita explicabo velit dolorem reiciendis nulla aspernatur? Dolore et consequuntur sed, enim iste eveniet quae porro, doloremque rerum adipisci odio architecto, debitis tempore commodi alias illo ipsum veritatis impedit repellat. In atque quaerat consequuntur? Amet modi, id corrupti enim dolore incidunt beatae similique aliquid cupiditate ducimus temporibus mollitia provident nemo asperiores fuga consectetur veritatis facere. Iste omnis ea sint minus eligendi expedita ex placeat natus, consequatur saepe, dolore rem blanditiis quibusdam dolorem ipsa commodi reprehenderit temporibus laudantium excepturi necessitatibus! Ea, nostrum non fugiat est labore nemo quae maxime assumenda harum delectus? Eius, veniam porro! Dolor dicta eos consequuntur blanditiis assumenda similique, recusandae incidunt quia harum provident eaque soluta a debitis quae, fugit delectus consequatur, iste modi deserunt placeat ex optio in. Ipsa velit odit explicabo perferendis esse laborum officiis. Distinctio iusto quos, adipisci asperiores illum totam eaque quia nihil alias nobis hic consequuntur consectetur reprehenderit dolore sed numquam facilis? Voluptates veritatis ipsam et sit deserunt! Repudiandae quas cupiditate quisquam excepturi voluptatem quod! Quaerat recusandae dignissimos possimus, architecto aliquam quos distinctio quidem consequatur ipsum vel quo voluptatem ab laboriosam minima quod ipsa culpa optio dolor, reprehenderit atque eveniet corrupti pariatur obcaecati. Possimus dolorum eos quis aut iure numquam doloremque, reprehenderit, quidem delectus obcaecati aliquam consectetur perferendis nisi rerum culpa expedita sunt libero voluptatibus accusantium veritatis. Provident eligendi labore ducimus. Delectus recusandae rerum commodi facere tempora ab! Totam atque suscipit numquam illum? Dolores doloribus perspiciatis esse, minus saepe, aliquam cum natus eveniet omnis quidem itaque doloremque libero ad ipsa dolorem debitis non, voluptates alias molestiae eos! Enim inventore laudantium laboriosam soluta? Quis dicta fuga culpa soluta, deserunt facere aliquid eum ipsum ad perspiciatis, minus non repudiandae. Provident illum maiores suscipit nobis officiis molestiae. Natus nemo excepturi quisquam officia consequuntur enim? Eligendi animi, enim, nemo exercitationem sapiente recusandae atque tempora illo ipsa unde inventore officiis iure corporis magnam alias, dolorum iste! Nostrum consectetur, magni eius autem laborum molestiae eveniet architecto aliquid ipsum velit libero nam nulla soluta expedita, aliquam, nihil voluptatum rerum nisi necessitatibus adipisci sit reprehenderit? Fuga cumque perspiciatis commodi ut sapiente neque ab sequi vitae eligendi officia esse, ipsum vel architecto excepturi rerum quam repudiandae debitis non tenetur. Magnam repellat qui pariatur tempora accusantium distinctio sequi esse at illo corrupti animi, earum explicabo obcaecati repellendus tempore similique corporis adipisci.
                         </div>
-                    <div class="productDescription">
-                        <a href="#" class="productTitle">LILLY STRIPE LINED RAINCOAT IN CORNFLOWER BLUE</a>
-                        <p class="productPrice">&euro;69.99</p>
-                        <p class="oldPrice">&euro;420.69</p>
                     </div>
-                </div>
-                
-                <div class="product">
-                    <div class="productPreview">
-                        <a href="#">
-                            <img class="productPreview1" src="./images/med-grey-melange-maharvey-n-coat_1.jpg" alt="jacket">
-                            <img class="productPreview2" src="./images/med-grey-melange-maharvey-n-coat_2.jpg" alt="jacket">
-                        </a>
-                    </div>
-                    <div class="productDescription">
-                        <a href="#" class="productTitle">product</a>
-                        <p class="productPrice">&euro;69.99</p>
-                    </div>
-                </div>
-                
-                <div class="product">
-                    <div class="productPreview">
-                        <a href="#">
-                            <img class="productPreview1" src="./images/azura-blue-matrostol-b1-shirt_1.jpg" alt="jacket">
-                            <img class="productPreview2" src="./images/azura-blue-matrostol-b1-shirt_2.jpg" alt="jacket">
-                        </a>
-                    </div>
-                    <div class="productDescription">
-                        <a href="#" class="productTitle">product</a>
-                        <p class="productPrice">&euro;69.99</p>
-                    </div>
-                </div>
-
-                <div class="product">
-                    <div class="productPreview">
-                        <a href="#">
-                            <img class="productPreview1" src="./images/gramatal_long_sleeve_t-shirt_in_white_and_navy-1.jpg" alt="jacket">
-                            <img class="productPreview2" src="./images/gramatal_long_sleeve_t-shirt_in_white_and_navy-2.jpg" alt="jacket">
-                        </a>
-                    </div>
-                    <div class="productDescription">
-                        <a href="#" class="productTitle">product</a>
-                        <p class="productPrice">&euro;69.99</p>
-                    </div>
-                </div>
-                
-                <div class="product">
-                    <div class="productPreview">
-                        <a href="#">
-                            <img class="productPreview1" src="./images/miami_jeans_in_dark_denim_1.jpg" alt="jacket">
-                            <img class="productPreview2" src="./images/miami_jeans_in_dark_denim_2.jpg" alt="jacket">
-                        </a>
-                    </div>
-                    <div class="productDescription">
-                        <a href="#" class="productTitle">product</a>
-                        <p class="productPrice">&euro;69.99</p>
-                    </div>
-                </div>
-
-                <div class="product">
-                    <div class="productPreview">
-                        <a href="#">
-                            <img class="productPreview1" src="./images/dark_green_jacket_1.jpg" alt="jacket">
-                            <img class="productPreview2" src="./images/dark_green_jacket_2.jpg" alt="jacket">
-                        </a>
-                    </div>
-                    <div class="productDescription">
-                        <a href="#" class="productTitle">product</a>
-                        <p class="productPrice">&euro;69.99</p>
-                    </div>
-                </div>
-
-                <div class="product">
-                    <div class="productPreview">
-                        <a href="#">
-                            <img class="productPreview1" src="./images/sofia_1_4_zip_cotton_stripe_knit_in_red-1.jpg" alt="jacket">
-                            <img class="productPreview2" src="./images/sofia_1_4_zip_cotton_stripe_knit_in_red-2.jpg" alt="jacket">
-                        </a>
-                    </div>
-                    <div class="productDescription">
-                        <a href="#" class="productTitle">product</a>
-                        <p class="productPrice">&euro;69.99</p>
-                    </div>
-                </div>
-
-                <div class="product">
-                    <div class="productPreview">
-                        <a href="#">
-                            <img class="productPreview1" src="./images/glock_mens_tee_in_burgundy-1.jpg" alt="jacket">
-                            <img class="productPreview2" src="./images/glock_mens_tee_in_burgundy-2.jpg" alt="jacket">
-                        </a>
-                    </div>
-                    <div class="productDescription">
-                        <a href="#" class="productTitle">product</a>
-                        <p class="productPrice">&euro;69.99</p>
-                    </div>
-                </div>
-
-            </div>
-            <!---<div class="size_selection">
-                <p>How to choose size</p>
-                <table>
-                    <caption><b><i>Hoodie Size Chart</i></b></caption>
-                    <thead>
-                        <tr>
-                            <th>Russian size</th>
-                            <th>International size</th>
-                            <th>Bust (cm)</th>
-                            <th>Waist (cm)</th>
-                            <th>Hip girth (cm)</th>
-                            <th>Sleeve length (cm)</th>
-                            <th>USA (US)</th>
-                            <th>Europe (EU)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th>44</th>
-                            <td>XXS</td>
-                            <td>88</td>
-                            <td>70</td>
-                            <td>92</td>
-                            <td>59</td>
-                            <td>34</td>
-                            <td>38</td>
-                        </tr>
-                        <tr>
-                            <th>46</th>
-                            <td>XS</td>
-                            <td>92</td>
-                            <td>76</td>
-                            <td>96</td>
-                            <td>60</td>
-                            <td>36</td>
-                            <td>40</td>
-                        </tr>
-                        <tr>
-                            <th>48</th>
-                            <td>S</td>
-                            <td>96</td>
-                            <td>82</td>
-                            <td>100</td>
-                            <td>61</td>
-                            <td>38</td>
-                            <td>42</td>
-                        </tr>
-                        <tr>
-                            <th>50</th>
-                            <td>M</td>
-                            <td>100</td>
-                            <td>88</td>
-                            <td>104</td>
-                            <td>62</td>
-                            <td>40</td>
-                            <td>44</td>
-                        </tr>
-                        <tr>
-                            <th>52</th>
-                            <td>L</td>
-                            <td>104</td>
-                            <td>94</td>
-                            <td>108</td>
-                            <td>63</td>
-                            <td>42</td>
-                            <td>46</td>
-                        </tr>
-                        <tr>
-                            <th>54</th>
-                            <td>XL</td>
-                            <td>108</td>
-                            <td>100</td>
-                            <td>112</td>
-                            <td>63</td>
-                            <td>44</td>
-                            <td>48</td>
-                        </tr>
-                        <tr>
-                            <th>56</th>
-                            <td>XXL</td>
-                            <td>112</td>
-                            <td>106</td>
-                            <td>116</td>
-                            <td>64</td>
-                            <td>46</td>
-                            <td>50</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <form>
-                <p>Please fill in this form to create an account</p>
+                </li>
+            </ul>
+            
+        </div>
+        <h2>REGISTRATION</h2>
+        
+        <form>
+            <div class="formInput">
+                <input type="text" name="name" autocomplete="off" required>
                 <label for="name">Name</label>
-                <input type="text" placeholder="Enter Name" name="name" required><br>
+            </div>
+            
+            <div class="formInput">
+                <input type="tel" id="surname" name="surname" autocomplete="off" required>
+                <label for="phone">Surname</label>
+            </div>
 
-                <label for="phone">Phone number: </label>
-                <input type="tel" id="phone" pattern="[0-9]12" placeholder="380123456789" name="phone" required><br>
-
+            <div class="formInput">
+                <input type="password" name="psw" id="psw" required>
                 <label for="psw">Password</label>
-                <input type="password" placeholder="Enter Password" name="psw" id="psw" required><br>
+            </div>
 
-                <label for="psw-repeat">Repeat Password</label>
-                <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required><br>
+            <div class="formElement">
+                <input type="radio" name="sex" id="men" value="men" required>
+                <label for="men">Men</label>
 
-                <span>Sex: <br></span>
-                <input type="radio" name="sex" id="none" value="none">
-                <label for="none">Prefere not too answer</label><br>
-                    
-                <input type="radio" name="sex" id="men" value="men">
-                <label for="men">Men</label><br>
-                    
                 <input type="radio" name="sex" id="women" value="women">
-                <label for="women">Women</label><br>
-
-                <label for="country">Country</label>
-                <select name="country">
-                    <option>Choose country</option>
-                    <option value="Россия">Russia</option> 
-                    <option value="Украина">Ukraine</option> 
-                    <option value="Беларусь">USA</option> 
-                </select><br>
+                <label for="women">Women</label>
+            </div>
                 
-                <input type="checkbox" id="check" name="check">
-                <label for="check">I agree with <a href="#">privacy policy</a></label><br>
+            <div class="formElement">
+            <select required>
+                <option value="">Choose country</option>
+                <option value="Россия">Russia</option> 
+                <option value="Украина">Ukraine</option> 
+                <option value="Беларусь">USA</option> 
+            </select>
+            </div>
+            
+            <div class="formElement">
+                <input type="checkbox" id="check" name="check" required>
+                <label for="check">I agree with <a href="#privacyPolicy">privacy policy</a></label>
+            </div>
 
-                <button type="submit">Register</button> 
-            </form>--->
-        </main>
-        <footer>
-            <div class="social-menu">
-                <ul>
-                  <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                  <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                  <li><a href=""><i class="fa fa-instagram"></i></a></li>
-                  <li><a href=""><i class="fa fa-youtube"></i></a></li>
-                  <li><a href=""><i class="fa fa-telegram"></i></a></li>
-                </ul>
-              </div>
-            <div id="copyright"><p>©MAGAZINCHIK 2020</p></div>
-        </footer>
-    </div>
-    
+            <button type="submit">Register</button> 
+        </form>
+    </main>
+    <footer>
+        <div class="social-menu">
+            <ul>
+                <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa fa-youtube"></i></a></li>
+                <li><a href=""><i class="fa fa-telegram"></i></a></li>
+            </ul>
+            </div>
+        <div id="copyright"><p>©MAGAZINCHIK 2020</p></div>
+    </footer>
+
     <script src="app.js"></script>
 
 </body>

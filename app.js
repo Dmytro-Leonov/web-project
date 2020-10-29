@@ -40,3 +40,21 @@ leftArrow.addEventListener('click', () => {
         slider.style.transition = '1s'
     }
 })
+
+document.querySelectorAll('.collapse_button').forEach(button => {
+    button.addEventListener('click', ()=>{
+        let collapse_content = button.nextElementSibling
+        button.classList.toggle('collapse_button-active')
+        if(button.classList.contains('collapse_button-active'))
+        {
+            collapse_content.style.maxHeight = collapse_content.scrollHeight + 'px'
+        }
+        else
+        {
+            collapse_content.style.maxHeight = null
+        }
+    })
+})
+
+
+    
