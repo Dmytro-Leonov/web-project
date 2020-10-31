@@ -27,7 +27,7 @@ body {
 header {
     border-bottom: 1px solid black;
     display: flex;
-    align-items: center;
+    justify-content:center;
     background-color: rgb(245,246,247)
 }
 
@@ -393,6 +393,17 @@ footer {
     border-top: 1px solid rgb(241,241,241);
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+.wrapper1200 {
+    max-width: 1200px;
+    width: 1200px;
+    display: flex;
+    align-items: center;
+}
+
+.foot {
     justify-content: space-around;
 }
 
