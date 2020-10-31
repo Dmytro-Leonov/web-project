@@ -399,17 +399,17 @@
         
         <form>
             <div class="formInput">
-                <input type="text" name="name" autocomplete="off" required>
+                <input type="text" name="name" autocomplete="off" pattern="[A-Za-z]+" placeholder="&nbsp" required>
                 <label for="name">Name</label>
             </div>
             
             <div class="formInput">
-                <input type="tel" id="surname" name="surname" autocomplete="off" required>
-                <label for="phone">Surname</label>
+                <input id="surname" name="surname" autocomplete="off" pattern="[A-Za-z]+" placeholder="&nbsp" required>
+                <label for="surname">Surname</label>
             </div>
 
             <div class="formInput">
-                <input type="password" name="psw" id="psw" required>
+                <input type="password" name="psw" id="psw" minlength="8" placeholder="&nbsp" required>
                 <label for="psw">Password</label>
             </div>
 
