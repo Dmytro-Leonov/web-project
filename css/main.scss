@@ -1,0 +1,63 @@
+@import "./variables";
+
+@mixin btnlink($backgr, $color, $hoverBackColor,$hoverColor) {
+    background-color: $backgr;
+    color: $color;
+    &:hover {
+        background-color: $hoverBackColor;
+        color: $hoverColor;
+    }
+}
+
+button {
+    @include btnlink($btnColor, white, $btnHoverColor, white);
+    border: none;
+    height: 38px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: 0.3s;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.helpBlock{
+    a{
+        @include btnlink(none, $linkColor, none, $linkHoverColor);
+        &:visited {
+            color: rebeccapurple;
+        }
+    }
+}
+
+.productPrice {
+    font-weight: bold;
+    font-size: 14px;
+    color: #282828;
+}
+
+.oldPrice {
+    @extend .productPrice;
+    color: #a5a5a5;
+    text-decoration: line-through;
+}
+
+.social-menu ul li:nth-child(1) a:hover {
+    background-color: map-get($socialColors , facebook);
+}
+.social-menu ul li:nth-child(2) a:hover {
+    background-color: map-get($socialColors , twitter);
+}
+.social-menu ul li:nth-child(3) a:hover {
+    background-color: map-get($socialColors , instagram);
+}
+.social-menu ul li:nth-child(4) a:hover {
+    background-color: map-get($socialColors , youtube);
+}
+.social-menu ul li:nth-child(5) a:hover {
+    background-color: map-get($socialColors , telegram);
+}

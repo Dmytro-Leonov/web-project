@@ -28,7 +28,7 @@ header {
     border-bottom: 1px solid black;
     display: flex;
     justify-content:center;
-    background-color: rgb(245,246,247)
+    background-color: rgb(245,246,247);
 }
 
 #logo{
@@ -110,25 +110,6 @@ main {
     width: 100%;
     height: 37px;
 }
-
-button {
-    background-color: royalblue;
-    border: none;
-    color: white;
-    height: 38px;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    text-transform: uppercase;
-  }
-
-button:hover {
-    transition: 0.3s;
-    cursor: pointer;
-    background-color: #023e8a;
-  }
 
 .buttonBlock {
     margin-right: 20px;
@@ -252,20 +233,6 @@ h2 {
     padding-bottom: 7px;
 }
 
-
-.productPrice {
-    font-weight: bold;
-    font-size: 14px;
-    color: #282828;
-}
-
-.oldPrice {
-    font-weight: bold;
-    font-size: 14px;
-    color: #a5a5a5;
-    text-decoration: line-through;
-}
-
 h3{
     font-size: 20px;
     font-weight: 300;
@@ -315,18 +282,6 @@ table, th, td {
 th, td {
     text-align: center;
     padding: 0 5px;
-}
-
-.helpBlock a {
-    color: #4169e1;
-}
-
-.helpBlock a:hover {
-    color: #0077b6;
-}
-
-.helpBlock a:visited {
-    color: rebeccapurple;
 }
 
 form {
@@ -437,19 +392,4 @@ footer {
 }
 .social-menu ul li a:hover {
     transform:translate(0, -3px);
-}
-.social-menu ul li:nth-child(1) a:hover {
-    background-color: #3b5999;
-}
-.social-menu ul li:nth-child(2) a:hover {
-    background-color: #55acee;
-}
-.social-menu ul li:nth-child(3) a:hover {
-    background-color: #e4405f;
-}
-.social-menu ul li:nth-child(4) a:hover {
-    background-color: #cd201f;
-}
-.social-menu ul li:nth-child(5) a:hover {
-    background-color: #31a9dd;
 }
