@@ -8,6 +8,7 @@ html {
 }
 
 ::-webkit-scrollbar {
+    border-radius: 5px;
     width: 5px;
     background: #e2e2e2;
 }
@@ -180,6 +181,14 @@ h2 {
 .aboutUsBlock {
     text-align: center;
     padding: 0 30px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s all ease-in-out;
+}
+
+.aboutUsBlock_appear {
+    opacity: 1;
+    transform: translate(0);
 }
 
 .productsContainer {
@@ -193,6 +202,14 @@ h2 {
 .product {
     display: flex;
     flex-direction: column;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all ease-in-out;
+}
+
+.product_appear {
+    opacity: 1;
+    transform: translate(0);
 }
 
 .productPreview {
@@ -285,61 +302,137 @@ th, td {
 }
 
 form {
-    width: 300px;
+    font-family: 'Open Sans', sans-serif;
+    width: 350px;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     border: 2px solid #8f8f8f;
     padding: 10px 20px;
     border-radius: 20px;
     box-shadow: 0 0 10px #00000071;
 }
 
-.formInput {
+.form-control {
+	padding-bottom: 20px;
     position: relative;
-    padding: 5px 0;
-    width: 100%;
 }
 
-.formInput label {
-    position: absolute;
-    color: #000;
-    top: 30px;
-    left: 0;
-    transition: 0.3s;
-    color: #777777;
+.form-control label {
+	display: inline-block;
+    margin-bottom: 5px;
 }
 
-.formInput input {
-    outline: none;
-    width: 100%;
-    border: none;
-    border-bottom: 2px solid #000;
-    height: 50px;
-    font-size: 20px;
-    font-family: inherit;
+.form-control input {
+    box-sizing: border-box;
+	border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px;
+	width: 100%;
 }
 
-.formInput input:focus ~ label,
-.formInput input:valid ~ label {
-    top: 0;
+.form-control input:focus {
+	outline: 0;
+	border-color: #777;
 }
 
-.formInput input:not(:placeholder-shown):invalid ~ label {
-    top: 0;
-    color: red;
+.form-control.success input {
+	border-color: #2ecc71;
 }
+
+.form-control.error input {
+	border-color: #e74c3c;
+}
+
+.form-control small {
+	color: #e74c3c;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+}
+
+.form-control.error small {
+	visibility: visible;
+}
+
 
 .formElement {
+    text-align: center;
     padding: 10px 0;
 }
 
+.formElement:nth-child(5){
+    padding-top: 0;
+}
 select {
     font-family: inherit;
     font-size: 16px;
     padding: 5px 10px;
     border: 1px solid #000;
+}
+
+.privacy_policy {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #4169e1;
+}
+
+.modal {
+    position: fixed;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 700px;
+    max-width: 80%;
+}
+  
+.modal.active {
+    transform: translate(-50%, -50%);
+    display: block;
+}
+  
+.modal-header {
+    padding: 10px 15px;
+    border-bottom: 1px solid black;
+}
+  
+.modal-header .title {
+    font-size: 20px;
+    font-weight: bold;
+}
+  
+.close_button {
+    display: block;
+    margin: 10px auto;
+}
+  
+.modal-body {
+    padding: 10px 15px;
+}
+  
+#overlay {
+    position: fixed;
+    z-index: 9;
+    opacity: 0;
+    transition: 0.2s ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+}
+  
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
 }
 
 footer {
