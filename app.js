@@ -1,5 +1,5 @@
 //slider
-const slider = document.querySelector('.slider')
+/*const slider = document.querySelector('.slider')
 const leftArrow = document.querySelector('.left')
 const rightArrow = document.querySelector('.right')
 
@@ -21,7 +21,7 @@ function slide() {
         slider.style.transition = '1s'
     }
 }
-let timer = setInterval(slide, delay);
+setInterval(slide, delay);
 
 rightArrow.addEventListener('click', slide)
 
@@ -36,28 +36,28 @@ leftArrow.addEventListener('click', () => {
         slider.style.transform = 'translate(' + (index) * (-100 / nOfSlides) + '%)'
         slider.style.transition = '1s'
     }
-})
+})*/
 
 //collapse content
-document.querySelectorAll('.collapse_button').forEach(button => {
+/*document.querySelectorAll('.collapse_button').forEach(button => {
     button.addEventListener('click', () => {
         let collapse_content = button.nextElementSibling
         button.classList.toggle('collapse_button-active')
         if (button.classList.contains('collapse_button-active')) {
-            collapse_content.style.maxHeight = collapse_content.scrollHeight + 'px'
+            collapse_content.style.maxHeight = collapse_content.scrollHeight + 1 + 'px'
         }
         else {
             collapse_content.style.maxHeight = null
         }
     })
-})
+})*/
 
 //animations
 window.addEventListener('load', () => {
     let blocks = document.querySelectorAll('.aboutUsBlock')
     blocks.forEach(block => {
-            block.classList.add('aboutUsBlock_appear')
-        })
+        block.classList.add('aboutUsBlock_appear')
+    })
 })
 
 window.addEventListener('scroll', () => {
@@ -65,9 +65,9 @@ window.addEventListener('scroll', () => {
     blocks.forEach(block => {
         let blockPos = block.getBoundingClientRect().top
         let screenPos = window.innerHeight
-        if(blockPos < screenPos)
+        if (blockPos < screenPos)
             block.classList.add('product_appear')
-      })
+    })
 })
 
 //popup
@@ -78,12 +78,12 @@ let overlay = document.getElementById('overlay')
 openButton.addEventListener('click', () => {
     document.querySelector('.modal').classList.add('active')
     overlay.classList.add('active')
-  })
+})
 
 closeButton.addEventListener('click', () => {
     document.querySelector('.modal').classList.remove('active')
     overlay.classList.remove('active')
-})  
+})
 
 //form validation
 const form = document.getElementById('form');
@@ -94,73 +94,73 @@ const password = document.getElementById('password')
 const password2 = document.getElementById('password2')
 
 form.addEventListener('submit', e => {
-	e.preventDefault()
-	checkInputs()
-});
+    e.preventDefault()
+    checkInputs()
+})
 
 function checkInputs() {
-	const surnameValue = surname.value.trim()
-	const nameValue = name_.value.trim()
-	const emailValue = email.value.trim()
-	const passwordValue = password.value
+    const surnameValue = surname.value.trim()
+    const nameValue = name_.value.trim()
+    const emailValue = email.value.trim()
+    const passwordValue = password.value
     const password2Value = password2.value
     let lettersOnly = /^[A-Za-z]+$/
-	
-	if(surnameValue === '') {
-		setErrorFor(surname, 'Surname cannot be blank')
-	} else if(!surnameValue.match(lettersOnly)) {
+
+    if (surnameValue === '') {
+        setErrorFor(surname, 'Surname cannot be blank')
+    } else if (!surnameValue.match(lettersOnly)) {
         setErrorFor(surname, 'Invalid characters in surname')
     } else {
-		setSuccessFor(surname)
+        setSuccessFor(surname)
     }
-    
-    if(nameValue === '') {
-		setErrorFor(name_, 'Name cannot be blank')
-	} else if(!nameValue.match(lettersOnly)) {
+
+    if (nameValue === '') {
+        setErrorFor(name_, 'Name cannot be blank')
+    } else if (!nameValue.match(lettersOnly)) {
         setErrorFor(name_, 'Invalid characters in name')
     } else {
-		setSuccessFor(name_);
-	}
-	
-	if(emailValue === '') {
-		setErrorFor(email, 'Email cannot be blank')
-	} else if (!isEmail(emailValue)) {
-		setErrorFor(email, 'Invalid email')
-	} else {
-		setSuccessFor(email);
-	}
-	
-	if(passwordValue === '') {
-		setErrorFor(password, 'Password cannot be blank')
-	} else if(passwordValue.length < 8) {
-		setErrorFor(password, 'Password must be at least 8 characters long')
-    } else if(passwordValue.length > 20) {
+        setSuccessFor(name_);
+    }
+
+    if (emailValue === '') {
+        setErrorFor(email, 'Email cannot be blank')
+    } else if (!isEmail(emailValue)) {
+        setErrorFor(email, 'Invalid email')
+    } else {
+        setSuccessFor(email);
+    }
+
+    if (passwordValue === '') {
+        setErrorFor(password, 'Password cannot be blank')
+    } else if (passwordValue.length < 8) {
+        setErrorFor(password, 'Password must be at least 8 characters long')
+    } else if (passwordValue.length > 20) {
         setErrorFor(password, 'Password is too long')
     } else {
-		setSuccessFor(password);
-	}
-	
-	if(password2Value === '') {
-		setErrorFor(password2, 'Password cannot be blank');
-	} else if(passwordValue !== password2Value) {
-		setErrorFor(password2, 'Passwords do not match');
-	} else{
-		setSuccessFor(password2);
-	}
+        setSuccessFor(password);
+    }
+
+    if (password2Value === '') {
+        setErrorFor(password2, 'Password cannot be blank');
+    } else if (passwordValue !== password2Value) {
+        setErrorFor(password2, 'Passwords do not match');
+    } else {
+        setSuccessFor(password2);
+    }
 }
 
 function setErrorFor(input, message) {
-	const formControl = input.parentElement;
-	const small = formControl.querySelector('small');
-	formControl.className = 'form-control error';
-	small.innerText = message;
+    const formControl = input.parentElement;
+    const small = formControl.querySelector('small');
+    formControl.className = 'form-control error';
+    small.innerText = message;
 }
 
 function setSuccessFor(input) {
-	const formControl = input.parentElement;
-	formControl.className = 'form-control success';
+    const formControl = input.parentElement;
+    formControl.className = 'form-control success';
 }
-	
+
 function isEmail(email) {
-	return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+    return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 }
