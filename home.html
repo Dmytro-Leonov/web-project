@@ -4,15 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <title>MAGAZINCHIK</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <!-- <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.css"> -->
+    <script src="loadCSS.js"></script>
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lobster">
     <link rel="stylesheet" type="text/css" href='https://fonts.googleapis.com/css?family=Montserrat'>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src ="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-chained/1.0.1/jquery.chained.js"></script>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery-chained/1.0.1/jquery.chained.js"></script>
+    <script id="loadcss">
+        loadCSS( "./css/shrinked.css", document.getElementById("loadcss") );
+    </script>
 </head>
 
 <body>
@@ -44,9 +48,12 @@
 
         <div class="slider_wrapper">
             <div class="slider">
-                <section class="slider_element"><img src="./images/slides/slide1.jpg" alt="slide1"></section>
-                <section class="slider_element one"><img src="./images/slides/slide2.jpg" alt="slide2"></section>
-                <section class="slider_element two"><img src="./images/slides/slide3.jpg" alt="slide3"></section>
+                <section class="slider_element"><img src="./images/slides/slide1.jpg" srcset="./images/slides/slide1.jpg 1200w,
+                    ./images/slides/slide1_small.jpg 900w" alt="slide1"></section>
+                <section class="slider_element one"><img src="./images/slides/slide2.jpg" srcset="./images/slides/slide2.jpg 1200w,
+                    ./images/slides/slide2_small.jpg 900w" alt="slide2"></section>
+                <section class="slider_element two"><img src="./images/slides/slide3.jpg" srcset="./images/slides/slide3.jpg 1200w,
+                    ./images/slides/slide3_small.jpg 900w" alt="slide3"></section>
             </div>
             <div class="controls unselectable">
                 <span class="arrow left">
@@ -95,8 +102,10 @@
             <div class="product">
                 <div class="productPreview">
                     <a href="#">
-                        <img class="productPreview1" src="./images/blue_jacket_1.jpg" alt="jacket">
-                        <img class="productPreview2" src="./images/blue_jacket_2.jpg" alt="jacket">
+                        <img class="productPreview1 lazy" srcset="./images/blue_jacket_1.jpg 1000w,
+                        ./images/blue_jacket_1_small.jpg 300w" data-src="./images/blue_jacket_1.jpg" alt="jacket">
+                        <img class="productPreview2 lazy" srcset="./images/blue_jacket_2.jpg 1000w,
+                        ./images/blue_jacket_2_small.jpg 300w" data-src="./images/blue_jacket_2.jpg" alt="jacket">
                     </a>
                 </div>
                 <div class="productDescription">
@@ -109,8 +118,10 @@
             <div class="product">
                 <div class="productPreview">
                     <a href="#">
-                        <img class="productPreview1" src="./images/med-grey-melange-maharvey-n-coat_1.jpg" alt="jacket">
-                        <img class="productPreview2" src="./images/med-grey-melange-maharvey-n-coat_2.jpg" alt="jacket">
+                        <img class="productPreview1 lazy" srcset="./images/med-grey-melange-maharvey-n-coat_1.jpg 1000w,
+                        ./images/med-grey-melange-maharvey-n-coat_1_small.jpg 300w" data-src="./images/med-grey-melange-maharvey-n-coat_1.jpg" alt="jacket">
+                        <img class="productPreview2 lazy" srcset="./images/med-grey-melange-maharvey-n-coat_2.jpg 1000w,
+                        ./images/med-grey-melange-maharvey-n-coat_2_small.jpg 300w" data-src="./images/med-grey-melange-maharvey-n-coat_2.jpg" alt="jacket">
                     </a>
                 </div>
                 <div class="productDescription">
@@ -122,8 +133,10 @@
             <div class="product">
                 <div class="productPreview">
                     <a href="#">
-                        <img class="productPreview1" src="./images/azura-blue-matrostol-b1-shirt_1.jpg" alt="jacket">
-                        <img class="productPreview2" src="./images/azura-blue-matrostol-b1-shirt_2.jpg" alt="jacket">
+                        <img class="productPreview1 lazy" srcset="./images/azura-blue-matrostol-b1-shirt_1.jpg 1000w,
+                        ./images/azura-blue-matrostol-b1-shirt_1_small.jpg 300w" data-src="./images/azura-blue-matrostol-b1-shirt_1.jpg" alt="jacket">
+                        <img class="productPreview2 lazy" srcset="./images/azura-blue-matrostol-b1-shirt_2.jpg 1000w,
+                        ./images/azura-blue-matrostol-b1-shirt_2_small.jpg 300w" data-src="./images/azura-blue-matrostol-b1-shirt_2.jpg" alt="jacket">
                     </a>
                 </div>
                 <div class="productDescription">
@@ -135,50 +148,11 @@
             <div class="product">
                 <div class="productPreview">
                     <a href="#">
-                        <img class="productPreview1" src="./images/gramatal_long_sleeve_t-shirt_in_white_and_navy-1.jpg"
+                        <img class="productPreview1 lazy" srcset="./images/gramatal_long_sleeve_t-shirt_in_white_and_navy-1.jpg 1000w,
+                        ./images/gramatal_long_sleeve_t-shirt_in_white_and_navy-1_small.jpg 300w" data-src="./images/gramatal_long_sleeve_t-shirt_in_white_and_navy-1.jpg"
                             alt="jacket">
-                        <img class="productPreview2" src="./images/gramatal_long_sleeve_t-shirt_in_white_and_navy-2.jpg"
-                            alt="jacket">
-                    </a>
-                </div>
-                <div class="productDescription">
-                    <a href="#" class="productTitle">product</a>
-                    <p class="productPrice">&euro;69.99</p>
-                </div>
-            </div>
-
-            <div class="product">
-                <div class="productPreview">
-                    <a href="#">
-                        <img class="productPreview1" src="./images/miami_jeans_in_dark_denim_1.jpg" alt="jacket">
-                        <img class="productPreview2" src="./images/miami_jeans_in_dark_denim_2.jpg" alt="jacket">
-                    </a>
-                </div>
-                <div class="productDescription">
-                    <a href="#" class="productTitle">product</a>
-                    <p class="productPrice">&euro;69.99</p>
-                </div>
-            </div>
-
-            <div class="product">
-                <div class="productPreview">
-                    <a href="#">
-                        <img class="productPreview1" src="./images/dark_green_jacket_1.jpg" alt="jacket">
-                        <img class="productPreview2" src="./images/dark_green_jacket_2.jpg" alt="jacket">
-                    </a>
-                </div>
-                <div class="productDescription">
-                    <a href="#" class="productTitle">product</a>
-                    <p class="productPrice">&euro;69.99</p>
-                </div>
-            </div>
-
-            <div class="product">
-                <div class="productPreview">
-                    <a href="#">
-                        <img class="productPreview1" src="./images/sofia_1_4_zip_cotton_stripe_knit_in_red-1.jpg"
-                            alt="jacket">
-                        <img class="productPreview2" src="./images/sofia_1_4_zip_cotton_stripe_knit_in_red-2.jpg"
+                        <img class="productPreview2 lazy" srcset="./images/gramatal_long_sleeve_t-shirt_in_white_and_navy-2.jpg 1000w,
+                        ./images/gramatal_long_sleeve_t-shirt_in_white_and_navy-2_small.jpg 300w" data-src="./images/gramatal_long_sleeve_t-shirt_in_white_and_navy-2.jpg"
                             alt="jacket">
                     </a>
                 </div>
@@ -191,8 +165,57 @@
             <div class="product">
                 <div class="productPreview">
                     <a href="#">
-                        <img class="productPreview1" src="./images/glock_mens_tee_in_burgundy-1.jpg" alt="jacket">
-                        <img class="productPreview2" src="./images/glock_mens_tee_in_burgundy-2.jpg" alt="jacket">
+                        <img class="productPreview1 lazy" srcset="./images/miami_jeans_in_dark_denim_1.jpg 1000w,
+                        ./images/miami_jeans_in_dark_denim_1_small.jpg 300w" data-src="./images/miami_jeans_in_dark_denim_1.jpg" alt="jacket">
+                        <img class="productPreview2 lazy" srcset="./images/miami_jeans_in_dark_denim_2.jpg 1000w,
+                        ./images/miami_jeans_in_dark_denim_2_small.jpg 300w" data-src="./images/miami_jeans_in_dark_denim_2.jpg" alt="jacket">
+                    </a>
+                </div>
+                <div class="productDescription">
+                    <a href="#" class="productTitle">product</a>
+                    <p class="productPrice">&euro;69.99</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="productPreview">
+                    <a href="#">
+                        <img class="productPreview1 lazy" srcset="./images/dark_green_jacket_1.jpg 1000w,
+                        ./images/dark_green_jacket_1_small.jpg 300w" data-src="./images/dark_green_jacket_1.jpg" alt="jacket">
+                        <img class="productPreview2 lazy" srcset="./images/dark_green_jacket_2.jpg 1000w,
+                        ./images/dark_green_jacket_2_small.jpg 300w" data-src="./images/dark_green_jacket_2.jpg" alt="jacket">
+                    </a>
+                </div>
+                <div class="productDescription">
+                    <a href="#" class="productTitle">product</a>
+                    <p class="productPrice">&euro;69.99</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="productPreview">
+                    <a href="#">
+                        <img class="productPreview1 lazy" srcset="./images/sofia_1_4_zip_cotton_stripe_knit_in_red-1.jpg 1000w,
+                        ./images/sofia_1_4_zip_cotton_stripe_knit_in_red-1_small.jpg 300w" data-src="./images/sofia_1_4_zip_cotton_stripe_knit_in_red-1.jpg"
+                            alt="jacket">
+                        <img class="productPreview2 lazy" srcset="./images/sofia_1_4_zip_cotton_stripe_knit_in_red-2.jpg 1000w,
+                        ./images/sofia_1_4_zip_cotton_stripe_knit_in_red-2_small.jpg 300w" data-src="./images/sofia_1_4_zip_cotton_stripe_knit_in_red-2.jpg"
+                            alt="jacket">
+                    </a>
+                </div>
+                <div class="productDescription">
+                    <a href="#" class="productTitle">product</a>
+                    <p class="productPrice">&euro;69.99</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="productPreview">
+                    <a href="#">
+                        <img class="productPreview1 lazy" srcset="./images/glock_mens_tee_in_burgundy-1.jpg 1000w,
+                        ./images/glock_mens_tee_in_burgundy-1_small.jpg 300w" data-src="./images/glock_mens_tee_in_burgundy-1.jpg" alt="jacket">
+                        <img class="productPreview2 lazy" srcset="./images/glock_mens_tee_in_burgundy-2.jpg 1000w,
+                        ./images/glock_mens_tee_in_burgundy-2_small.jpg 300w" data-src="./images/glock_mens_tee_in_burgundy-2.jpg" alt="jacket">
                     </a>
                 </div>
                 <div class="productDescription">
@@ -208,8 +231,10 @@
             <div class="product">
                 <div class="productPreview">
                     <a href="#">
-                        <img class="productPreview1" src="./images/miami_jeans_in_dark_denim_1.jpg" alt="jacket">
-                        <img class="productPreview2" src="./images/miami_jeans_in_dark_denim_2.jpg" alt="jacket">
+                        <img class="productPreview1 lazy" srcset="./images/miami_jeans_in_dark_denim_1.jpg 1000w,
+                        ./images/miami_jeans_in_dark_denim_1_small.jpg 300w" data-src="./images/miami_jeans_in_dark_denim_1.jpg" alt="jacket">
+                        <img class="productPreview2 lazy" srcset="./images/miami_jeans_in_dark_denim_2.jpg 1000w,
+                        ./images/miami_jeans_in_dark_denim_2_small.jpg 300w" data-src="./images/miami_jeans_in_dark_denim_2.jpg" alt="jacket">
                     </a>
                 </div>
                 <div class="productDescription">
@@ -221,9 +246,11 @@
             <div class="product">
                 <div class="productPreview">
                     <a href="#">
-                        <img class="productPreview1" src="./images/gramatal_long_sleeve_t-shirt_in_white_and_navy-1.jpg"
+                        <img class="productPreview1 lazy" srcset="./images/gramatal_long_sleeve_t-shirt_in_white_and_navy-1.jpg 1000w,
+                        ./images/gramatal_long_sleeve_t-shirt_in_white_and_navy-1_small.jpg 300w" data-src="./images/gramatal_long_sleeve_t-shirt_in_white_and_navy-1.jpg"
                             alt="jacket">
-                        <img class="productPreview2" src="./images/gramatal_long_sleeve_t-shirt_in_white_and_navy-2.jpg"
+                        <img class="productPreview2 lazy" srcset="./images/gramatal_long_sleeve_t-shirt_in_white_and_navy-2.jpg 1000w,
+                        ./images/gramatal_long_sleeve_t-shirt_in_white_and_navy-2_small.jpg 300w" data-src="./images/gramatal_long_sleeve_t-shirt_in_white_and_navy-2.jpg"
                             alt="jacket">
                     </a>
                 </div>
@@ -236,8 +263,10 @@
             <div class="product">
                 <div class="productPreview">
                     <a href="#">
-                        <img class="productPreview1" src="./images/blue_jacket_1.jpg" alt="jacket">
-                        <img class="productPreview2" src="./images/blue_jacket_2.jpg" alt="jacket">
+                        <img class="productPreview1 lazy" srcset="./images/blue_jacket_1.jpg 1000w,
+                        ./images/blue_jacket_1_small.jpg 300w" data-src="./images/blue_jacket_1.jpg" alt="jacket">
+                        <img class="productPreview2 lazy" srcset="./images/blue_jacket_2.jpg 1000w,
+                        ./images/blue_jacket_2_small.jpg 300w" data-src="./images/blue_jacket_2.jpg" alt="jacket">
                     </a>
                 </div>
                 <div class="productDescription">
@@ -250,8 +279,10 @@
             <div class="product">
                 <div class="productPreview">
                     <a href="#">
-                        <img class="productPreview1" src="./images/med-grey-melange-maharvey-n-coat_1.jpg" alt="jacket">
-                        <img class="productPreview2" src="./images/med-grey-melange-maharvey-n-coat_2.jpg" alt="jacket">
+                        <img class="productPreview1 lazy" srcset="./images/med-grey-melange-maharvey-n-coat_1.jpg 1000w,
+                        ./images/med-grey-melange-maharvey-n-coat_1_small.jpg 300w" data-src="./images/med-grey-melange-maharvey-n-coat_1.jpg" alt="jacket">
+                        <img class="productPreview2 lazy" srcset="./images/med-grey-melange-maharvey-n-coat_2.jpg 1000w,
+                        ./images/med-grey-melange-maharvey-n-coat_2_small.jpg 300w" data-src="./images/med-grey-melange-maharvey-n-coat_2.jpg" alt="jacket">
                     </a>
                 </div>
                 <div class="productDescription">
@@ -263,8 +294,10 @@
             <div class="product">
                 <div class="productPreview">
                     <a href="#">
-                        <img class="productPreview1" src="./images/azura-blue-matrostol-b1-shirt_1.jpg" alt="jacket">
-                        <img class="productPreview2" src="./images/azura-blue-matrostol-b1-shirt_2.jpg" alt="jacket">
+                        <img class="productPreview1 lazy" srcset="./images/azura-blue-matrostol-b1-shirt_1.jpg 1000w,
+                        ./images/azura-blue-matrostol-b1-shirt_1_small.jpg 300w" data-src="./images/azura-blue-matrostol-b1-shirt_1.jpg" alt="jacket">
+                        <img class="productPreview2 lazy" srcset="./images/azura-blue-matrostol-b1-shirt_2.jpg 1000w,
+                        ./images/azura-blue-matrostol-b1-shirt_2_small.jpg 300w" data-src="./images/azura-blue-matrostol-b1-shirt_2.jpg" alt="jacket">
                     </a>
                 </div>
                 <div class="productDescription">
@@ -276,8 +309,10 @@
             <div class="product">
                 <div class="productPreview">
                     <a href="#">
-                        <img class="productPreview1" src="./images/glock_mens_tee_in_burgundy-1.jpg" alt="jacket">
-                        <img class="productPreview2" src="./images/glock_mens_tee_in_burgundy-2.jpg" alt="jacket">
+                        <img class="productPreview1 lazy" srcset="./images/glock_mens_tee_in_burgundy-1.jpg 1000w,
+                        ./images/glock_mens_tee_in_burgundy-1_small.jpg 300w" data-src="./images/glock_mens_tee_in_burgundy-1.jpg" alt="jacket">
+                        <img class="productPreview2 lazy" srcset="./images/glock_mens_tee_in_burgundy-2.jpg 1000w,
+                        ./images/glock_mens_tee_in_burgundy-2_small.jpg 300w" data-src="./images/glock_mens_tee_in_burgundy-2.jpg" alt="jacket">
                     </a>
                 </div>
                 <div class="productDescription">
@@ -289,8 +324,10 @@
             <div class="product">
                 <div class="productPreview">
                     <a href="#">
-                        <img class="productPreview1" src="./images/dark_green_jacket_1.jpg" alt="jacket">
-                        <img class="productPreview2" src="./images/dark_green_jacket_2.jpg" alt="jacket">
+                        <img class="productPreview1 lazy" srcset="./images/dark_green_jacket_1.jpg 1000w,
+                        ./images/dark_green_jacket_1_small.jpg 300w" data-src="./images/dark_green_jacket_1.jpg" alt="jacket">
+                        <img class="productPreview2 lazy" srcset="./images/dark_green_jacket_2.jpg 1000w,
+                        ./images/dark_green_jacket_2_small.jpg 300w" data-src="./images/dark_green_jacket_2.jpg" alt="jacket">
                     </a>
                 </div>
                 <div class="productDescription">
@@ -302,9 +339,11 @@
             <div class="product">
                 <div class="productPreview">
                     <a href="#">
-                        <img class="productPreview1" src="./images/sofia_1_4_zip_cotton_stripe_knit_in_red-1.jpg"
+                        <img class="productPreview1 lazy" srcset="./images/sofia_1_4_zip_cotton_stripe_knit_in_red-1.jpg 1000w,
+                        ./images/sofia_1_4_zip_cotton_stripe_knit_in_red-1_small.jpg 300w" data-src="./images/sofia_1_4_zip_cotton_stripe_knit_in_red-1.jpg"
                             alt="jacket">
-                        <img class="productPreview2" src="./images/sofia_1_4_zip_cotton_stripe_knit_in_red-2.jpg"
+                        <img class="productPreview2 lazy" srcset="./images/sofia_1_4_zip_cotton_stripe_knit_in_red-2.jpg 1000w,
+                        ./images/sofia_1_4_zip_cotton_stripe_knit_in_red-2_small.jpg 300w" data-src="./images/sofia_1_4_zip_cotton_stripe_knit_in_red-2.jpg"
                             alt="jacket">
                     </a>
                 </div>
@@ -582,7 +621,7 @@
         </div>
         <div id="overlay"></div>
         <h2>click image to hide</h2>
-        <img id="hidable_block" src="./images/click_me.png" alt="whatfor" style="display: block;
+        <img class="lazy" id="hidable_block" data-src="./images/click_me.png" alt="whatfor" style="display: block;
         margin-left: auto;
         margin-right: auto;
         cursor: pointer;">
@@ -634,8 +673,14 @@
             </div>
         </div>
     </footer>
-    <script src="jquery.js"></script>
-    <script src="app.js"></script>
+    <script defer src="jquery.js"></script>
+    <script defer src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.0/dist/lazyload.min.js"></script>
+    <script>
+        var lazyLoadInstance = new LazyLoad({
+        elements_selector: ".lazy"
+        });
+    </script>
 </body>
 
 </html>
